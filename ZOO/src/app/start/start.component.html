@@ -1,0 +1,34 @@
+<div id="background">
+  <p id = "mainHeader">WELCOME TO THE JUNGLE</p>
+  <p id = "signature">Zapraszamy do ZOO Politechniki Łódzkiej</p>
+</div>
+<div class="container">
+  <div class="box">
+    <div class="video">
+      <video autoplay loop class="first">
+        <source src="/assets/video.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="menu">
+      <a [routerLink]="['/']" ><div class="op">GŁÓWNA</div></a>
+      <a [routerLink]="['/price']" ><div class="op">CENNIK</div></a>
+      <a [routerLink]="['/events']" ><div class="op">WYDARZENIA</div></a>
+      <a [routerLink]="['/info']" ><div class="op">CIEKAWOSTKI</div></a>
+      <a [routerLink]="['/concact']" ><div class="op">NASZ ZESPÓŁ</div></a>
+    </div>
+    <div class="video">
+      <video autoplay loop class="second">
+        <source src="/assets/video2.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="video">
+      <video autoplay loop class="third">
+        <source src="/assets/video3.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <div class="router">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+

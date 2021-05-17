@@ -1,0 +1,116 @@
+#background{
+  background-image: url('/assets/jungle_background.jpg');
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  animation-name: hide;
+  animation-duration: 4s;
+  animation-fill-mode:forwards;
+  position: relative;
+  animation-timing-function: ease-in;
+  animation-delay: 2s;
+  z-index: 1;
+  position: absolute;
+}
+
+@keyframes hide {
+  from {bottom: 0px;}
+  to {bottom: 1000px;}
+}
+
+#mainHeader{
+  color:rgb(223, 223, 223);
+  letter-spacing: 4px;
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+#signature{
+  color:rgb(160, 160, 160);
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  z-index: 0;
+  width: 100%;
+}
+
+.box{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.video{
+  height: 25%;
+  overflow: hidden;
+}
+
+video{
+  width: 100%;
+}
+
+.first{
+  transform: translate(0, -50px);
+}
+
+.second{
+  transform: translate(0, -90px);
+}
+
+.third{
+  transform: translate(0, -40px);
+}
+
+.menu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  height: 25%;
+}
+
+.op{
+  background-color: rgb(245, 245, 245);
+  color: rgb(82, 82, 82);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+
+}
+
+.op:hover{
+  background-color: white;
+  cursor: pointer;
+}
+
+.router{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(82, 82, 82);
+  width: 25%;
+  height: 100%;
+}
