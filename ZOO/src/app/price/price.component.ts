@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgModule, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-price',
@@ -12,4 +12,7 @@ export class PriceComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  nr1=0;
+  nr2=0;
+  nr3=0;
 }

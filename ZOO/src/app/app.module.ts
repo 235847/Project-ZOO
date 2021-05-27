@@ -9,6 +9,7 @@ import { EventsComponent } from './events/events.component';
 import { InfoComponent } from './info/info.component';
 import { ConcactComponent } from './concact/concact.component';
 import { NaviComponent } from './navi/navi.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NaviComponent } from './navi/navi.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
