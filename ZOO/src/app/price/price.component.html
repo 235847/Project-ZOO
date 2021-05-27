@@ -28,4 +28,32 @@
         <div class="devider"></div>
     </div>
 
-</div>
+    <div class="SidePanel">
+        <div class="SidePanelTitle">Oblicz cenę swojego biletu</div>
+        <div class="SidePanelContent">
+            <div class="CountingInfo">Aby obliczyć cenę swoich biletów uzupełnij poniższe dane</div><br>
+            <div class="FormPrice">
+                <form #PriceForm="ngForm">
+                    <div class="FormsDescription">Wprowadź liczbę biletów normalnych</div>
+                    <input type="number" min="0" max="250" [(ngModel)]="nr1" name="number1"><br><br>
+                    <div class="FormsDescription">Wprowadź liczbę biletów ulgowych</div>
+                    <input type="number" min="0" max="250" [(ngModel)]="nr2" name="number2"><br><br>
+                    <div class="FormsDescription">Wprowadź liczbę biletów normalnych</div>
+                    <input type="number" min="10" max="250" [(ngModel)]="nr3" name="number3"><br>
+                </form>
+            </div>
+            <div class="SumUp">
+                <div class="FirstSumUp">Cena twoich biletów to: <b>{{nr1*30+nr2*15+nr3*10}}zł</b></div>
+                <div class="SumUpTitle">SUMY CZĄSTKOWE</div>
+                <div class="SumUpDescription">
+                    Bilety normalne: <b>{{nr1}}</b> biletów za 30zł, suma:
+                    <b>{{nr1*30}}zł</b><br>Bilety ulgowe:
+                    <b>{{nr2}}</b> biletów za 15zł, suma:
+                    <b>{{nr2*15}}zł</b><br>Bilety grupowe:
+                    <b>{{nr3}}</b> biletów za 10zł, suma:
+                    <b>{{nr3*10}}zł</b>
+                </div>
+            </div>
+        </div>
+
+    </div>

@@ -1,3 +1,5 @@
+/*MAIN*/
+
 .cennik {
     width: 100%;
     height: 100vh;
@@ -55,4 +57,87 @@
     width: 70%;
     height: 2px;
     background-color: rgb(150, 148, 148);
+}
+
+
+/*SIDE PANEL*/
+
+.SidePanel {
+    position: fixed;
+    right: -622px;
+    transition: right 0.5s ease-out 0s;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.SidePanel:hover {
+    right: 0;
+}
+
+.SidePanelTitle {
+    font-family: -webkit-pictograph;
+    width: 150px;
+    background: rgb(49, 104, 17);
+    color: white;
+    border-radius: 10px;
+    padding: 5px 5px 30px 5px;
+    text-align: center;
+    position: relative;
+    top: 230px;
+    left: -93px;
+    transform: rotate(-90deg);
+    z-index: 1;
+}
+
+.SidePanelContent {
+    width: 590px;
+    height: 400px;
+    padding: 10px;
+    border: 2px solid rgb(49, 104, 17);
+    z-index: 20;
+    background: white;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.CountingInfo {
+    margin: 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.FormPrice {
+    margin-left: 20px;
+}
+
+.FormsDescription {
+    width: 59%;
+    float: left;
+    text-align: left;
+}
+
+input {
+    width: 39%;
+    float: left;
+}
+
+.SumUp {
+    margin-top: 50px;
+}
+
+.FirstSumUp {
+    font-size: large;
+}
+
+.SumUpTitle {
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.SumUpDescription {
+    margin-top: 15px;
+    font-size: small;
+    line-height: 150%
 }
