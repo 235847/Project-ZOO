@@ -10,10 +10,11 @@
 }
 
 .title {
-    color: rgb(49, 104, 17);
-    font-size: 400%;
-    letter-spacing: 5px;
+    font-size: 200%;
+    letter-spacing: 3px;
     text-align: center;
+
+    font-weight: lighter;
 }
 
 .tables {
@@ -39,6 +40,7 @@
 .TicketType {
     text-align: left;
     font-weight: 550;
+    font-family: 'Libre Baskerville', serif;
 }
 
 .cost {
