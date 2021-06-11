@@ -35,10 +35,10 @@
             <div class="FormPrice">
                 <form #PriceForm="ngForm">
                     <div class="FormsDescription">Wprowadź liczbę biletów normalnych</div>
-                    <input type="number" min="0" max="250" [(ngModel)]="nr1" name="number1"><br><br>
+                    <input type="number" min="0" max="100" [(ngModel)]="nr1" name="number1"><br><br>
                     <div class="FormsDescription">Wprowadź liczbę biletów ulgowych</div>
-                    <input type="number" min="0" max="250" [(ngModel)]="nr2" name="number2"><br><br>
-                    <div class="FormsDescription">Wprowadź liczbę biletów normalnych</div>
+                    <input type="number" min="0" max="100" [(ngModel)]="nr2" name="number2"><br><br>
+                    <div class="FormsDescription">Wprowadź liczbę biletów grupowych</div>
                     <input type="number" min="10" max="250" [(ngModel)]="nr3" name="number3"><br>
                 </form>
             </div>
